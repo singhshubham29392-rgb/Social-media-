@@ -77,6 +77,7 @@ class MyDrawer extends StatelessWidget {
               leading: Icon(Icons.logout),
               title: Text("L O G O U T"),
               onTap: () {
+                FirebaseAuth.instance.signOut();
               },
             ),
           ),
@@ -85,3 +86,4 @@ class MyDrawer extends StatelessWidget {
     );
   }
 }
+
